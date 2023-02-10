@@ -1,8 +1,12 @@
+using pruebaTecnicaQuind.Models;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<PruebaContext>();
 
 var app = builder.Build();
 
